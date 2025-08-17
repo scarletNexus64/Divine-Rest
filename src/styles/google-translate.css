@@ -1,0 +1,150 @@
+/* Style pour Google Translate Widget */
+#google_translate_element {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+/* Style principal du sélecteur */
+.goog-te-gadget .goog-te-combo {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  padding: 6px 24px 6px 10px !important;
+  border-radius: 20px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.25) !important;
+  min-width: 110px !important;
+  height: 32px !important;
+  text-align: left !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: inherit !important;
+}
+
+/* Effet hover */
+.goog-te-gadget .goog-te-combo:hover {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Effet focus */
+.goog-te-gadget .goog-te-combo:focus {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Style des options du dropdown */
+.goog-te-combo option {
+  background: white !important;
+  color: #1f2937 !important;
+  padding: 8px 12px !important;
+  font-weight: 400 !important;
+}
+
+/* Style du texte sélectionné */
+.goog-te-menu-value {
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+/* Masquer les éléments Google non désirés */
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+  font-family: inherit !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-gadget span {
+  display: none !important;
+}
+
+.goog-te-gadget > span > a {
+  display: none !important;
+}
+
+.goog-te-gadget .goog-te-combo::before {
+  content: "🌍" !important;
+  margin-right: 6px !important;
+  font-size: 14px !important;
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+  #google_translate_element {
+    margin-left: 8px;
+    margin-right: 4px;
+  }
+  
+  .goog-te-gadget .goog-te-combo {
+    padding: 5px 20px 5px 8px !important;
+    font-size: 12px !important;
+    min-width: 90px !important;
+    height: 28px !important;
+    border-radius: 16px !important;
+  }
+  
+  .goog-te-gadget .goog-te-combo::before {
+    font-size: 12px !important;
+    margin-right: 4px !important;
+  }
+}
+
+/* Dark mode compatibility */
+.dark .goog-te-gadget .goog-te-combo {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  border-color: #f59e0b !important;
+}
+
+.dark .goog-te-gadget .goog-te-combo:hover {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+}
+
+/* Animation d'apparition */
+@keyframes fadeInTranslate {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#google_translate_element {
+  animation: fadeInTranslate 0.5s ease-out;
+}
+
+/* Style pour la barre de notification Google Translate */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Amélioration du contraste pour l'accessibilité */
+.goog-te-gadget .goog-te-combo {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 8px center !important;
+  background-size: 16px !important;
+  padding-right: 32px !important;
+}
