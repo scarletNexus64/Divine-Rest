@@ -138,7 +138,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 overflow-hidden">
       {/* Hero Section - Sans bannière */}
-      <section className="hero-mobile relative py-12 md:py-20 lg:py-32 bg-gradient-to-br from-divine-light via-white to-divine-light dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+      <section className="hero-mobile hero-background relative py-12 md:py-20 lg:py-32 bg-gradient-to-br from-divine-light via-white to-divine-light dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -148,7 +148,7 @@ const Home = () => {
               className="text-center mb-8 md:mb-16"
             >
               <motion.h1 
-                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-divine-dark dark:text-white mb-4 md:mb-6 leading-tight px-4"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-white mb-4 md:mb-6 leading-tight px-4"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -162,7 +162,7 @@ const Home = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="relative"
               >
-                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-light text-divine-gray dark:text-gray-300 mb-6 md:mb-8 px-4">
+                <h2 className="text-lg sm:text-xl md:text-2xl lg:text-4xl font-light text-white mb-6 md:mb-8 px-4">
                   Services funéraires de prestige
                 </h2>
                 
@@ -180,7 +180,7 @@ const Home = () => {
               </motion.div>
 
               <motion.p 
-                className="text-lg text-divine-gray dark:text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed"
+                className="text-lg text-white max-w-3xl mx-auto mb-10 leading-relaxed"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
@@ -210,7 +210,7 @@ const Home = () => {
                 
                 <a
                   href="tel:+33123456789"
-                  className="btn-responsive group border-2 border-divine-gold text-divine-gold px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium hover:bg-divine-gold hover:text-white transition-all duration-300 flex items-center justify-center transform hover:scale-105"
+                className="bg-transparent text-white border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-divine-dark transition-all flex items-center"
                 >
                   <FaPhone className="mr-2 group-hover:animate-pulse" />
                   Urgence 24h/7j

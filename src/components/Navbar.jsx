@@ -109,13 +109,13 @@ const Navbar = () => {
                 </Link>
               ))}
               
-              <Link
+              {/* <Link
                 to="/contact"
                 className="ml-2 xl:ml-4 bg-divine-gold text-white px-3 xl:px-5 py-2 xl:py-2.5 rounded-full text-xs xl:text-sm font-medium hover:bg-opacity-90 transition-all"
               >
                 <span className="hidden xl:inline">Contact urgence</span>
                 <span className="xl:hidden">Contact</span>
-              </Link>
+              </Link> */}
             </div>
 
             {/* Mobile Menu Button */}

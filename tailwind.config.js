@@ -17,8 +17,8 @@ export default {
         'divine-light': '#f9fafb',
       },
       fontFamily: {
-        'serif': ['Playfair Display', 'serif'],
         'sans': ['Albert Sans', 'sans-serif'],
+        'serif': ['Albert Sans', 'sans-serif'], // Remplace aussi font-serif par Albert Sans
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
